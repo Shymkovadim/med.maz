@@ -1,0 +1,692 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.header__menu {
+    background-color: #c7e7ff;
+    color: #021b2a;
+
+}
+
+.menu {
+
+    list-style: none;
+    display: flex;
+
+}
+
+.logo {
+    width: 110px;
+    height: 55px;
+}
+
+.menu__item {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    text-align: center;
+    min-width: 113px;
+}
+
+.menu__link {
+    display: inline-block;
+    width: 100%;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #073648;
+    text-decoration: none;
+    padding: 28px;
+}
+
+.menu__link:hover {
+    background: #058ad1;
+}
+
+.menu__link:active {
+    background: #0b7cd8;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1202px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.baner {
+
+    background: url(../img/fon1.jpg) center / cover no-repeat;
+    padding: 305px 0 105px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.baner__container {
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
+}
+
+.baner__contact {
+    padding: 35px 0 0 0;
+    max-width: 450px;
+    background: #fff;
+    align-self: start;
+    border-radius: 10px;
+}
+
+.baner__contact-content {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #02081a;
+    margin-bottom: 20px;
+}
+
+
+.baner__contact-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 50px;
+    margin-bottom: 75px;
+}
+
+.baner__contact-title {
+    padding: 0 15px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.baner__contact-title::before {
+    display: none;
+}
+
+
+
+
+.baner__content {
+    width: 55%;
+}
+
+.baner::before {
+    content: '';
+    /* background: rgba(88, 64, 64, 0.566); */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+}
+
+.baner__logo {
+    margin-bottom: 72px;
+
+}
+
+.logo__baner {
+    width: 300px;
+    height: 150px;
+}
+
+.baner__title {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: #02081a;
+    position: relative;
+    margin-bottom: 97px;
+}
+
+.baner__title::after {
+    content: '';
+    width: 170px;
+    border-bottom: 1px solid #02081a;
+    position: absolute;
+    left: 0;
+    bottom: -55px;
+
+
+}
+
+
+.baner__description {
+    max-width: 270px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #02081a;
+    margin-bottom: 42px;
+}
+
+.baner__btn {
+
+    border: 1px solid #02081a;
+    color: #02081a;
+    position: relative;
+    z-index: 2;
+}
+
+
+.baner__btn:hover,
+.design__btn:hover {
+    border: 1px solid #02081a;
+    color: #02081a;
+
+}
+
+
+.baner__btn:active,
+.design__btn:active {
+    background: #AB4949;
+    color: #02081a;
+    border: 1px solid #AB4949;
+}
+
+.baner__contact {
+    width: 45%;
+}
+
+
+.inform {
+    background: #F8EFEF;
+    padding: 32px 0 18px;
+    margin-bottom: 100px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 80px;
+    text-align: center;
+    position: relative;
+}
+
+h2::before {
+    content: '';
+    width: 170px;
+    border-bottom: 1px solid #EC7979;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -40px
+}
+
+.inform__title {
+    text-transform: capitalize;
+    margin-bottom: 16px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: start;
+}
+
+.inform__title::before {
+    display: none;
+}
+
+.inform__item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 10px;
+}
+
+.inform__container {
+    max-width: 1202px;
+    padding: 0 16px;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.inform__box {
+    list-style: none;
+    width: 60%;
+}
+
+.inform__content {
+    display: inline-block;
+    width: 50%;
+}
+
+
+
+.container {
+    max-width: 1202px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+
+
+
+.btn {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    max-width: 270px;
+    width: 100%;
+    color: #02081a;
+    padding: 16px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.services {
+    margin-bottom: 110px;
+}
+
+.services__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 92px;
+    color: #86878B;
+    text-align: center;
+}
+
+.option {
+    display: flex;
+    column-gap: 26px;
+}
+
+.option__container {
+    flex: 1 0;
+    text-align: center;
+}
+
+
+
+.option__img-box {
+    width: 125px;
+    height: 125px;
+    border: 2px solid #311f1f;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+
+}
+
+.option__img {
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+}
+
+
+.option__title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    line-height: 33px;
+    font-size: 24px;
+    margin-bottom: 25px;
+
+}
+
+.news {
+    margin-bottom: 150px;
+}
+
+.newslist {
+    display: flex;
+    column-gap: 26px;
+
+}
+
+.newslist__container {
+    flex: 1 0;
+    text-align: center;
+}
+
+
+
+.newslist__img-box {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 30px;
+
+}
+
+.newslist__img {
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+}
+
+
+.newslist__title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    line-height: 33px;
+    font-size: 24px;
+    margin-bottom: 25px;
+
+}
+
+.option__description {
+    font-size: 18px;
+    line-height: 21px;
+
+}
+
+
+.services__btn {
+    display: block;
+    margin: 70px auto 0;
+    background-color: #ec7979;
+    border: 1px solid #ec7979;
+
+}
+
+
+.services__btn:hover {
+    background: #AB4949;
+
+}
+
+.services__btn:active {
+
+    background: #EC7979;
+
+}
+
+
+.customers {
+    margin-bottom: 107px;
+}
+
+.customers__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 59px;
+    color: #86878B;
+    text-align: center;
+}
+
+.reviews {
+    display: flex;
+    column-gap: 30px;
+}
+
+.review {
+    flex: 1 0;
+}
+
+.review__box {
+    background-color: #E2E2E2;
+    border-radius: 10px;
+    padding: 38px 25px 37px 25px;
+    position: relative;
+    margin-bottom: 66px;
+}
+
+.review__box:after {
+    content: '';
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    bottom: -20px;
+    left: 70px;
+    z-index: 1;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #E2E2E2;
+}
+
+.reiew__description {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+}
+
+.review__customer {
+    display: flex;
+    column-gap: 30px;
+}
+
+.review__name {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 18px;
+}
+
+.review__profession {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.review__foto-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.review__foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.faq {
+
+    background: url(../img/fon.jpg) center right / cover no-repeat;
+    padding: 70px 0px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 70px;
+}
+
+.faq::before {
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+}
+
+.faq__container {
+    text-align: center;
+}
+
+.faq__title {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.faq__title::before {
+
+    border-bottom: 1px solid #fff;
+
+}
+
+.faq__separator {
+    width: 170px;
+    border-bottom: 1px solid #ffffff;
+    margin: 0 auto 40px;
+}
+
+.faq__container__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 79px;
+    color: #2f2121;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+
+}
+
+.faq__description {
+    padding: 20px 0;
+}
+
+.sep {
+
+    border-bottom: 1px solid #140d0d;
+
+    margin: 0 auto;
+}
+
+
+.faq__btn {
+    margin: 0 auto;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+footer {
+    background-color: #ff7272;
+    padding: 35px 0 27px;
+}
+
+.messengers__container {
+    margin-bottom: 28px;
+    justify-content: center;
+    display: flex;
+    column-gap: 32px;
+}
+
+.messengers__link {
+
+    width: 53px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.developer {
+
+    color: hsla(0, 0%, 100%, 0.5);
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.messengers__link:hover svg>path {
+    fill: #86878B;
+}
+
+.contact {
+    margin-bottom: 66px;
+}
+
+.contact__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 79px;
+    text-align: center;
+    color: #86878B;
+}
+
+
+.form-contact__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    margin-bottom: 50px;
+
+}
+
+.form-contact__input {
+    border: none;
+    border-bottom: solid 1px #BDBDBD;
+    padding: 15px 0;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+}
+
+.form-contact__input:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+.form-contact__data {
+    flex: 1 0;
+}
+
+.form-contact__textarea {
+    border: none;
+    border-bottom: solid 1px #BDBDBD;
+    padding: 15px 0;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    flex: 1 0;
+    vertical-align: top;
+    resize: none;
+
+
+}
+
+
+
+.form-contact {
+    text-align: center;
+}
+
+.form-contact__btn {
+    background-color: #ec7979;
+    border: 1px solid #ec7979;
+
+}
+
+.form__baner-btn:hover,
+.form-contact__btn:hover {
+    background: #AB4949;
+
+}
+
+.form-contact__btn:active {
+
+    background: #EC7979;
+
+}
